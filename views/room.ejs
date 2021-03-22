@@ -5,12 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foom</title>
+    
+    
     <script>
         console.log("<%= roomid %>");
+       
     </script>
 </head>
 <body>
-    Lets Build it 
+    <style>
+        #UserRoomID{
+           border: 10px;
+           border-radius: 2%;
+           border-width: 1px;
+           border-color: black;
+           align-content: center;
+           background-color: rgb(202, 162, 75);
+           border-style: dotted dashed solid double
+        }
+        /* #videoGrid{
+            border-style: double;
+            border-color: black;
+            border-radius: 10%;
+            border-width: 20px;
+        } */
+    </style>
+
+    <p id="UserRoomID"   >  Room ID :</p>
+    <div id="videoGrid"></div>
+ 
+   
 </body>
+<script src="script.js"></script>
+<script> document.getElementById("UserRoomID").innerHTML += "<%= roomid %>"</script>
 
 </html>
