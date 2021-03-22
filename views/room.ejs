@@ -8,9 +8,12 @@
     
     
     <script>
+        const ROOM_ID= "<%= roomid %>"
+        const USER_ID= "<%= userid %>"
         console.log("<%= roomid %>");
        
     </script>
+    <script src="/socket.io/socket.io.js"></script>
 </head>
 <body>
     <style>
@@ -32,11 +35,15 @@
     </style>
 
     <p id="UserRoomID"   >  Room ID :</p>
-    <div id="videoGrid"></div>
+    <p id="UserName">User Name:</p>
+    <div id="videoGrid" ></div>
  
    
 </body>
 <script src="script.js"></script>
-<script> document.getElementById("UserRoomID").innerHTML += "<%= roomid %>"</script>
+<link rel="styleSheets" href="style.css">
+<script> document.getElementById("UserRoomID").innerHTML += "<%= roomid %>";
+ document.getElementById("UserName").innerHTML += "<%= userid %>"
+ </script>
 
 </html>

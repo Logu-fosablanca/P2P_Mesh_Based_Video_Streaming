@@ -1,0 +1,13 @@
+#videoGrid{
+    display: flex;
+    justify-content: center;
+
+}
+
+video{
+   height: auto;
+   width: 50%; 
+   /* border-color: black;
+   border-width: 20px; */
+  
+}
